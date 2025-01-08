@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Menghapus background gradient dengan gambar */
+    background-color: #f5f7fa; /* Menggunakan warna latar belakang solid */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    text-align: left;
+    margin: 20px;
+}
+
+nav .back-link {
+    text-decoration: none;
+    color: #070303;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .back-link i {
+    margin-right: 5px;
+    color: #6a11cb;
+}
+
+nav .back-link:hover {
+    color: #2575fc;
+}
+
+.dashboard-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang transparan */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content h2 {
+    text-align: center;
+    color: #6a11cb;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #6a11cb;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Gambar Screenshot Proyek */
+.project-card img.project-image {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar kartu proyek */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Menambahkan border radius agar gambar lebih halus di sudutnya */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan di sekitar gambar */
+    transition: transform 0.3s ease; /* Efek pembesaran saat gambar dihover */
+}
+
+.project-card img.project-image:hover {
+    transform: scale(1.05); /* Gambar sedikit membesar saat mouse diarahkan ke gambar */
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #6c11a0, #2575fc);
+    color: #fff;
+    margin-top: 40px;
+    font-size: 1rem;
+}

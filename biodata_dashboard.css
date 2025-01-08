@@ -1,0 +1,70 @@
+/* Styling untuk halaman Biodata */
+body {
+    background: url('hhha.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to right, #6c11a0, #2575fc); /* Sama dengan footer */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+nav {
+    text-align: left;
+    margin: 20px;
+}
+
+nav .back-link {
+    text-decoration: none;
+    color: #070303;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .back-link i {
+    margin-right: 5px;
+    color: #6a11cb;
+}
+
+nav .back-link:hover {
+    color: #2575fc;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 37px;
+    background: linear-gradient(to right, #6c11a0, #2575fc); /* Sama dengan header */
+    color: #fff;
+    margin-top: 40px;
+}

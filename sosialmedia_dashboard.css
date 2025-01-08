@@ -1,0 +1,146 @@
+/* sosialmedia_dashboard.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Background gradient dengan gambar */
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2),
+                url('k.jpg'); /* Pastikan path relatif benar */
+    background-size: cover; /* Agar gambar mengisi seluruh layar */
+    background-repeat: no-repeat; /* Agar gambar tidak berulang */
+    background-attachment: fixed; /* Agar background tetap saat scrolling */
+    background-position: center; /* Menempatkan gambar di tengah */
+
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradasi header */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Tombol Kembali */
+nav {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.back-link {
+    font-size: 1rem;
+    color: #010307; /* Warna biru untuk tombol */
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-link:hover {
+    color: #1177cb; /* Warna ungu saat hover */
+}
+
+.back-link i {
+    margin-right: 8px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+.sosial-media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Menyesuaikan grid agar lebih responsif */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    align-items: stretch; /* Menjaga kartu sosial media seimbang */
+}
+
+.sosial-media-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Agar konten yang lebih panjang tidak keluar dari batas kartu */
+}
+
+.sosial-media-card i {
+    font-size: 3rem; /* Ukuran ikon yang lebih besar */
+    color: #2575fc;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.sosial-media-card h2 {
+    font-size: 1.5rem;
+    color: #0a0313;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sosial-media-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sosial-media-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sosial-media-card a {
+    text-decoration: none;
+    color: #0a0313; /* Warna teks default */
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sosial-media-card a:hover {
+    color: #2575fc; /* Warna teks saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #6c11a0, #2575fc); /* Gradasi footer */
+    color: #fff;
+    margin-top: 190px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#dashboard-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Menggunakan warna latar belakang yang lebih lembut */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sosial-media-card a {
+    font-size: 1.1rem; /* Ukuran font lebih besar di link */
+    font-weight: 600;
+    color: #0a0313;
+    transition: color 0.3s ease;
+}
+
+.sosial-media-card a:hover {
+    color: #2575fc;
+}

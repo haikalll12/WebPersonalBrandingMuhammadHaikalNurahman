@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Background gradient dengan gambar */
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2), 
+                url('k.jpg'); /* Pastikan path relatif benar */
+    background-size: cover; /* Agar gambar mengisi seluruh layar */
+    background-repeat: no-repeat; /* Agar gambar tidak berulang */
+    background-attachment: fixed; /* Agar background tetap saat scrolling */
+    background-position: center; /* Menempatkan gambar di tengah */
+
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card a {
+    text-decoration: none;
+    color: #6a11cb;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu-card a:hover {
+    color: #2575fc;
+}
+
+footer {
+    text-align: center;
+    padding: 37px;
+    background: linear-gradient(to right, #6c11a0, #2575fc);
+    color: #fff;
+    margin-top: 100px;
+}
+
+#dashboard-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Menggunakan warna latar belakang yang lebih lembut */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
